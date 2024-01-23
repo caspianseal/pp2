@@ -1,1 +1,2 @@
-print("Hello World")gi
+if 5 > 2:
+  print("Yes")
