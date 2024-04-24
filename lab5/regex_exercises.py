@@ -14,7 +14,7 @@ for string in test_strings:
 #2
 pattern = r'ab{2,3}'
 
-test_strings = ['ab', 'aab', 'abb', 'abbb', 'ac', 'a']
+test_strings = ['ab', 'aab', 'abb', 'abbb', 'ac', 'abbbbbbb']
 
 for string in test_strings:
     if re.fullmatch(pattern, string):

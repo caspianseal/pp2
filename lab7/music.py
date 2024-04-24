@@ -5,7 +5,7 @@ pygame.init()
 screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Music Player")
 
-playlist = ["song1.mp3", "song2.mp3"]
+playlist = ["song1.mp3", "song2.mp3", "song3.mp3", "song4.mp3"]
 current_song = 0
 
 pygame.mixer.music.load(playlist[current_song])

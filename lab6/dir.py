@@ -47,7 +47,7 @@ def path_exist_get_parts(path):
     else:
         return exists, None, None
 
-path = "/path/to/file_or_directory"
+path = ""
 exists, filename, directory = path_exist_get_parts(path)
 print("Exists:", exists)
 if exists:
@@ -59,7 +59,7 @@ def count_lines(file_path):
     with open(file_path, 'r') as file:
         return sum(1 for line in file)
 
-file_path = "/path/to/text_file.txt"
+file_path = "txt"
 line_count = count_lines(file_path)
 print("Number of lines:", line_count)
 
@@ -69,7 +69,7 @@ def write_list_to_file(file_path, input_list):
         for item in input_list:
             file.write(str(item) + "\n")
 
-file_path = "/path/to/output_file.txt"
+file_path = "txt"
 input_list = [1, 2, 3, 4, 5]
 write_list_to_file(file_path, input_list)
 
@@ -87,8 +87,8 @@ def copy_file(source_file, destination_file):
         with open(destination_file, 'w') as dest_file:
             dest_file.write(src_file.read())
 
-source_file = "/path/to/source_file.txt"
-destination_file = "/path/to/destination_file.txt"
+source_file = ""
+destination_file = ""
 copy_file(source_file, destination_file)
 
 #8
@@ -102,7 +102,7 @@ def delete_file(path):
     else:
         print("File does not exist.")
 
-path_to_delete = "/path/to/file"
+path_to_delete = ""
 if os.path.isfile(path_to_delete):
     delete_file(path_to_delete)
 else:

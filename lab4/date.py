@@ -21,7 +21,6 @@ print("Today:", current_date.strftime("%Y-%m-%d"))
 print("Tomorrow:", tomorrow.strftime("%Y-%m-%d"))
 
 #example 3
-from datetime import datetime
 
 current_datetime = datetime.now()
 
@@ -31,7 +30,6 @@ print("Original datetime:", current_datetime)
 print("Datetime without microseconds:", datetime_without_microseconds)
 
 #example 4
-from datetime import datetime
 
 date1 = datetime(2024, 1, 31, 12, 0, 0)  # First date
 date2 = datetime(2024, 2, 5, 12, 0, 0)   # Second date
